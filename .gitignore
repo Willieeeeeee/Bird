@@ -1,0 +1,44 @@
+# Adapted from https://github.com/github/gitignore/blob/main/Android.gitignore
+#
+# Please submit a pull request to untrack additional temporary files/directories or
+# if you feel like some changes will improve the consistency of cross-platform development.
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
+.idea/*
+!.idea/tasks.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+
+# macOS
+.DS_Store
+
+# Others
+/captures
+.externalNativeBuild
+.cxx

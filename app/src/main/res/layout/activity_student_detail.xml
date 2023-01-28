@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDetailActivity">
+
+    <!-- Use toolbar as actionbar (menu bar) -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="student"
+                app:titleTextColor="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/detail_student_headshot_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingTop="20dp"
+        android:src="@drawable/ic_default_headshot_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detail_student_common_classes_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_student_headshot_view" />
+
+    <ImageView
+        android:id="@+id/waving_hand_filled"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@id/detail_student_headshot_view"
+        app:layout_constraintTop_toTopOf="@id/detail_student_headshot_view"
+        app:layout_constraintBottom_toBottomOf="@id/detail_student_headshot_view"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ic_filled_wave" />
+
+    <ImageView
+        android:id="@+id/waving_hand_hollow"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:onClick="sendWave"
+        app:layout_constraintStart_toEndOf="@id/detail_student_headshot_view"
+        app:layout_constraintTop_toTopOf="@id/detail_student_headshot_view"
+        app:layout_constraintBottom_toBottomOf="@id/detail_student_headshot_view"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ic_hollow_wave" />
+
+    <ImageView
+        android:id="@+id/hollow_star_details"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        android:onClick="favorite"
+        app:layout_constraintEnd_toStartOf="@id/detail_student_headshot_view"
+        app:layout_constraintTop_toTopOf="@id/detail_student_headshot_view"
+        app:layout_constraintBottom_toBottomOf="@id/detail_student_headshot_view"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ic_hollow_star" />
+
+    <ImageView
+        android:id="@+id/filled_star_details"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        android:onClick="unfavorite"
+        app:layout_constraintEnd_toStartOf="@id/detail_student_headshot_view"
+        app:layout_constraintTop_toTopOf="@id/detail_student_headshot_view"
+        app:layout_constraintBottom_toBottomOf="@id/detail_student_headshot_view"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ic_filled_star" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

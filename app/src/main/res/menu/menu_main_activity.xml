@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_sort_filter"
+        android:title="Sort/Filter" />
+    <item android:id="@+id/menu_add_classes"
+        android:title="Add Classes" />
+    <item android:id="@+id/menu_view_favorites"
+        android:title="View My Favorite" />
+    <item android:id="@+id/menu_view_session"
+        android:title="View Saved Sessions" />
+    <item android:id="@+id/menu_mock"
+        android:title="Mock" />
+    <item android:id="@+id/menu_debug"
+        android:title="Debug" />
+</menu>

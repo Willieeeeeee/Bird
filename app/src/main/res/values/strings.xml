@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Birds of a Feather</string>
+    <string name="scan_btn_start">Start</string>
+    <string name="scan_btn_stop">Stop</string>
+    <string name="entering">Entering</string>
+    <string name="go_back">Go Back</string>
+    <string name="launch">Launch</string>
+    <string name="enter_you_past_class">Enter you past class</string>
+    <string name="start">start</string>
+    <string name="finish">Finish</string>
+    <string name="add_pastclass">Add PastClass</string>
+    <string name="done">Done</string>
+    <string name="subject">Subject</string>
+    <string name="course_number">Course Number</string>
+    <string name="enter">Enter</string>
+    <string name="your_name_will_be_shown_as">Your name will be shown as</string>
+    <string name="if_you_want_to_modify_your_name_you_can_put_your_new_name_under">What is the first name for your profile? If you want to modify your name you can put your new name under</string>
+    <string name="name">name</string>
+    <string name="modify">Modify</string>
+    <string name="after_you_finish_or_you_dont_want_to_change_your_name_you_can_click_the_confirm_button">After you finish or you dont want to change your name you can click the confirm button</string>
+    <string name="currentclass">CurrentClass</string>
+    <string name="pick_a_currentclass">Pick a currentclass</string>
+    <string name="button">Button</string>
+    <string name="session_name">Session Name</string>
+    <string name="or_you_can_input_a_name_for_the_session">Or you can input a name for the session</string>
+    <string name="pick_from_current_session">Pick from current session</string>
+    <string name="or_you_can_put_a_new_name_for_the_session">Or you can put a new name for the session</string>
+    <string name="Name">Name</string>
+    <string name="your_name_for_the_session_will_be">Your name for the session will be</string>
+    <string-array name="numbers">
+        <item>Year</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+    </string-array>
+    <string-array name="Quarters">
+        <item>Quarters</item>
+        <item>Fall</item>
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Summer</item>
+    </string-array>
+
+    <string-array name="Sizes">
+        <item>Tiny (0-40)</item>
+        <item>Small (40-75)</item>
+        <item>Medium (75-150)</item>
+        <item>Large (150-250)</item>
+        <item>Huge (250-400)</item>
+        <item>Gigantic (400+)</item>
+    </string-array>
+</resources>
